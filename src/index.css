@@ -1,0 +1,29 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+body {
+  background-color: #eef7ff;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.peer:checked {
+    background-color: #02C380; /* Warna biru saat dicentang */
+    border-color: #02C380; /* Border yang berubah saat dicentang */
+  }
+  .peer:checked ~ span {
+    color: #ffffff; /* Warna teks saat checkbox dicentang */
+  }
+
+  .nav-link {
+    color: #ffffff;
+  }
+
+  .nav-link:hover {
+    color: #02C380;
+  }
+
+  .primary-btn {
+    @apply flex w-full justify-center rounded-md bg-green-400 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-green-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:bg-slate-400 disabled:cursor-wait;
+}
